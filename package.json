@@ -18,6 +18,8 @@
     "lodash": "^4.15.0",
     "lowdb": "^0.13.1",
     "mongoose": "^4.5.9",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "uuid": "^2.0.2"
   }
 }
