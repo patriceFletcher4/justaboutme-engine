@@ -15,7 +15,7 @@ function signup(req, res){
     user.save(function(err){
       if(err){
         return res.status(500).json({
-          msg: 'error!'
+          msg: err
         })
       }
       var token = user.generateJwt();
