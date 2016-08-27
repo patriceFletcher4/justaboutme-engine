@@ -16,13 +16,13 @@ function signup(req, res){
       if(err){
         return res.status(500).json({
           msg: err
-        })
+        });
       }
       var token = user.generateJwt();
       return res.status(200).json({
         token: token,
         msg: 'success'
-      })
+      });
     });
 }
 function login(req, res){
@@ -32,14 +32,14 @@ function login(req, res){
     if(err){
       return res.status(500).json({
         msg: 'authentication failed'
-      })
+      });
     }
     if(user){
       var token = user.generateJwt();
       return res.status(200).json({
         msg: 'authentication succeeded',
         token: token
-      })
+      });
     } else {
       return res.status(401).json(info);
     }

@@ -15,4 +15,4 @@ Todo.prototype.updateComplete = function(value){
 };
 
 
-module.exports = Todo
+module.exports = Todo;

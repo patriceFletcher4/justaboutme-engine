@@ -17,7 +17,7 @@ function getAllPosts(req, res, next){
     if(err){
       res.status(500).json({
         msg: err
-      })
+      });
     } else {
       res.status(200).json({
         posts: foundPosts
@@ -63,11 +63,11 @@ function deletePost(req, res, next){
     if(err){
       res.status(500).json({
         msg: err
-      })
+      });
     } else {
       res.status(200).json({
         removedPost: removedPost
-      })
+      });
     }
   });
 }
