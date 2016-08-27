@@ -96,6 +96,7 @@ server.get('/forecast/hourly/:lat,:lon', function(req, res){
     });
 
 
+
 server.listen(port, function(){
   console.log('Now listening on port ' +port);
 });
